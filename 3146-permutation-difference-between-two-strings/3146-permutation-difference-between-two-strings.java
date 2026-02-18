@@ -2,7 +2,7 @@ class Solution {
     public int findPermutationDifference(String s, String t) {
         int sum=0;
         for(int i=0;i<s.length();i++){
-           sum+= Math.abs(s.charAt(i)-t.charAt(i));
+           sum+= Math.abs(s.indexOf(s.charAt(i))-t.indexOf(s.charAt(i)));
 
 
         }
